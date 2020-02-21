@@ -1,11 +1,8 @@
 import * as media from "./media";
 import * as comlink from "comlink";
 import { canvasSize } from "./config";
+import * as THREE from "three";
 
-document.body.innerHTML = `<div id='main'>
-  <video autoplay="true" id="video" style="transform: scaleX(-1);display: none;"></video>
-  <canvas id="output" />
-</div>`;
 
 console.log("start", performance.now());
 console.time("setup");
@@ -39,5 +36,7 @@ export async function main() {
   }
   mainloop();
   console.timeEnd("setup");
+  
+
 }
 main();

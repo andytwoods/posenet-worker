@@ -13,5 +13,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [new HTMLWebpackPlugin(), new WorkerLoader()]
+  plugins: [new HTMLWebpackPlugin({template: 'index.html'}), new WorkerLoader()]
 };
